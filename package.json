@@ -25,14 +25,17 @@
     "shortid": "^2.2.15",
     "slug": "^3.3.0",
     "fs": "0.0.1-security",
-    "handlebars": "^4.7.6"
+    "handlebars": "^4.7.6",
+    "log4js": "^6.5.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
   },
   "scripts": {
-    "start": "nodemon ./lib/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "set NODE_ENV=development&& nodemon ./lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "set NODE_ENV=development&& nodemon ./lib/index.js",
+    "prod": "set NODE_ENV=production&& nodemon ./lib/index.js"
   },
   "repository": {
     "type": "git",
